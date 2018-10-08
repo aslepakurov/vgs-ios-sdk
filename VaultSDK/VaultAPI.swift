@@ -16,7 +16,7 @@ public enum VaultAPIError: Int {
 }
 
 public class VaultAPI: NSObject {
-    static let errorDomainSuffix = ".valut-api"
+    static let errorDomainSuffix = ".vault-api"
 
     /// Version of framework
     static var frameworkVersion: String? = {
@@ -32,7 +32,7 @@ public class VaultAPI: NSObject {
 
     /// Base URL to the API server
     public var baseURL: URL
-    /// The publishable key for tokenlizing senstive data to be stored in the vault
+    /// The publishable key for tokenizing sensitive data to be stored in the vault
     public var publishableKey: String
     /// The URL session to be used for making HTTP requests
     public var urlSession: URLSession
@@ -47,8 +47,8 @@ public class VaultAPI: NSObject {
         self.urlSession = urlSession
     }
 
-    /// Create a token for given senstive data
-    ///  - Parameters payload: the payload of senstive data to be tokenlized
+    /// Create a token for given sensitive data
+    ///  - Parameters payload: the payload of sensitive data to be tokenized
     ///  - Parameters failure: the callback to be called with error when we failed to create
     ///  - Parameters success: the callback to be called with token data when we create successfully
     ///  - Returns: the URLSessionTask for outgoing HTTP request
