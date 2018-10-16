@@ -12,7 +12,7 @@ import VaultSDK
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var senstiveDataField: UITextField!
+    @IBOutlet weak var sensitiveDataField: UITextField!
     @IBOutlet weak var tokenResultField: UITextField!
 
     override func viewDidLoad() {
